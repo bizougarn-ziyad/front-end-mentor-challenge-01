@@ -10,7 +10,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  outline: none;
   font-family:Inter;
 }
 body{
@@ -63,9 +62,8 @@ body{
   justify-content: center;
   gap: 20px;
 }
-.links{
+.links {
   background-color: var(--Grey700);
-  color: var(--White);
   width: 350px;
   height: 50px;
   border-radius: 10px;
@@ -73,10 +71,17 @@ body{
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
+  text-decoration: none;
+}
+.links a{
+ color: var(--White);
+}
+.links:active a{
+  color: var(--Grey900);
 }
 .links:active{
-  background-color: var(--Green);
   color: var(--Grey900);
+  background-color: var(--Green);
 }
 @media (max-width:500px) {
   .container{
